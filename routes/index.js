@@ -6,6 +6,7 @@ router.get("/", (req, res) => {
     layout: "login",
   });
 });
+
 router.get("/dashboard", (req, res) => res.render("Dashboard"));
 
 module.exports = router;
