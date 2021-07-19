@@ -1,1 +1,27 @@
-<h1>hi</h1>
+<h6>Oh it's muh Beebee cakes 🥰</h6>
+<h3>Welcome sweet {{name}}y cakes</h3>
+<p>Here are your words!</p>
+{{#if note}}
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each note}}
+        <tr>
+          <td><a href="/stories/{{id}}">{{title}}</a></td>
+          <td>{{createdAt}}</td>
+          <td><span class="dash-status">{{status}}</span></td>
+          <td></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>You have not created any words homie freshness</p>
+{{/if}}
